@@ -1,0 +1,29 @@
+.text{
+    padding: 20px;
+    border: solid 2px currentColor;
+    color: darkblue;
+    animation: slideIn 3s;
+}
+@keyframes slideIn {
+    0% {
+        opacity: 0;/*初期状態では透明に*/
+        transform: translateX(64px);
+      }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+}
+.text h1{
+    font-size: 80px;
+}
+.text p{
+    font-size: 20px;
+}
+.textPastel{
+    composes: text;
+    color: lightpink;
+}
+.flexContainer{
+    composes: spaceBetween from 'styles/utils.module.css';
+}

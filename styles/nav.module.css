@@ -1,0 +1,46 @@
+.text{
+    padding: 20px;
+    border: solid 2px currentColor;
+    color: darkblue;
+    animation: slideIn 3s;
+}
+@keyframes slideIn {
+    0% {
+        opacity: 0;/*初期状態では透明に*/
+        transform: translateX(64px);
+      }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+}
+@media (hover: hover){
+    .list a:hover{
+        color: var(--accent);
+    }
+}
+@media (hover: nome) {
+    .list a{
+        -webkit-tap-highlight-color: transparent;
+    }
+    .list a:active{
+        color: var(--accent);
+    }
+}
+.text h1{
+    font-size: 80px;
+}
+.text p{
+    font-size: 20px;
+}
+.textPastel{
+    composes: text;
+    color: lightpink;
+}
+.list{
+    display: flex;
+    gap: 2em;
+}
+.list a:hover{
+    color: var(--accent);
+}

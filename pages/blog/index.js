@@ -3,14 +3,13 @@ import Meta from 'components/meta'
 import Container from "components/container";
 import Hero from 'components/hero'
 
-export default function Home(){
+export default function Blog(){
   return (
     <Container>
-      <Meta />
+      <Meta pageTitle="ブログ" pageDesc="ブログの記事一覧" />
         <Hero
-        title="CUBE"
-        subtitle="アウトプットしていくサイト" 
-        imageOn
+        title="Blog"
+        subtitle="Recent Posts"
         />
     </Container>
   )
